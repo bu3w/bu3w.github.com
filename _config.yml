@@ -3,16 +3,16 @@
 
 #server: true
 #server_port: 4001
-baseurl: /
+baseurl: ""
 
 permalink: /:year/:title.html
 
 author: mencius
-mainurl: http://blog.bu3w.net/
-mirrorurl: http://github.bu3w.net/
+
 disqus_account: bu3w
 google_cse_id: 009801870054537756643:qdawfqyyefu
 google_ad_client: ca-pub-8177363758163999
 google_ad_slot: 2178824706
 google_analytics_account: UA-28008949-1
 google_analytics_domain: bu3w.net
+
