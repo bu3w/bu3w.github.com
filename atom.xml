@@ -1,0 +1,20 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>mencius' blog</title>
+<link href="http://blog.bu3w.net/atom.xml" rel="self" />
+<link href="http://blog.bu3w.net/" />
+<link href="http://github.bu3w.net/" />
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>http://blog.bu3w.net/</id>
+<author><name>mencius</name></author>
+{% for post in site.posts limit: 10 %}
+<entry>
+  <title>{{ post.title }}</title>
+  <link href="http://blog.bu3w.net{{ post.url }}" />
+  <updated>{{ post.date | date_to_xmlschema }}</updated>
+  <id>http://blog.bu3w.net{{ post.id }}</id>
+  <content type="html">{{ post.content | xml_escape }}</content>
+</entry>{% endfor %}
+</feed>

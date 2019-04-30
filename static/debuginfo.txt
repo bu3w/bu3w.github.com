@@ -1,0 +1,25 @@
+---
+---
+site:
+{{ site }}
+
+page:
+{{ page }}
+
+post:
+{{ post }}
+
+pages:
+{% for p in site.pages %}{{ p }}
+{% endfor %}
+
+posts:
+{% for p in site.posts %}{{ p }}
+{% endfor %}
+
+content:
+{{ content }}
+
+tags:
+{% for t in site.tags %}{{ t }}
+{% endfor %}

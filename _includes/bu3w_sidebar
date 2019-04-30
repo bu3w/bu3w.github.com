@@ -1,0 +1,3 @@
+<aside class="sidebar">{% include google_search %}<h1>Pages</h1>
+<ul><li><a href="{% if site.mainurl %}{{ site.mainurl }}{% else %}{{ site.baseurl }}{% endif %}">blog</a>{% if site.mirrorurl %}(<a href="{{ site.mirrorurl }}">mirror</a>){% endif %}
+</li><li><a href="{{ site.baseurl }}archives.html">archives</a></li><li><a href="{{ site.baseurl }}about.html">about</a></li></ul>{% include twitter_followme %}{% include google_adsense %}</aside>
